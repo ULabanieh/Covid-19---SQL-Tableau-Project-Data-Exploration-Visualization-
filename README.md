@@ -1,3 +1,6 @@
+# ![coronavirus (1)](https://github.com/user-attachments/assets/22b6c85d-01ab-4ed5-acac-7544044fc532) Covid 19 - SQL & Tableau Project (Data Exploration & Visualization)
+
+
 # Project Overview
 ---
 This is a Data Exploration and Data Visualization project that I completed as part of the Data Analytics Bootcamp by Alex The Analyst. The project consists of 2 parts: Data Exploration with SQL and Data Visualization with Tableau. I looked into a Covid-19 dataset with data from all countries in the world day-by-day with metrics such as total infected, total deaths and vaccinations. The goal of this project is to showcase skills in ability to write SQL queries for getting a specific outcomes and gathering the data in an organized way that will later serve for our visualization in Tableau, which will showcase overall metrics, deaths by continent, a map of population infected by country, and a forecast of infected population in 5 sample countries: China, India, Mexico, United Kingdom and United States
@@ -45,7 +48,8 @@ ORDER BY 1, 2
 ```
 
 Sample output: 
-![[Pasted image 20240806124613.png]]
+
+![Pasted image 20240806124613](https://github.com/user-attachments/assets/482b3180-db32-4553-8b47-cc6e7329e2e4)
 
 ### Infected Percentage
 ---
@@ -60,7 +64,8 @@ ORDER BY 1, 2
 
 Sample Output:
 
-![[Pasted image 20240806125201.png]]
+![Pasted image 20240806125201](https://github.com/user-attachments/assets/a363cb1d-aefe-4c20-b90f-1c8c72beb244)
+
 
 ### Global Numbers
 ---
@@ -76,7 +81,9 @@ ORDER BY 1, 2 DESC
 
 
 Sample output: 
-![[Pasted image 20240806131243.png]]
+
+![Pasted image 20240806131243](https://github.com/user-attachments/assets/ced27b03-7a11-4cfb-badb-1e0603298533)
+
 
 ### Total Population vs Vaccinations
 ---
@@ -93,7 +100,9 @@ ORDER BY 2, 3
 ```
 
 Sample output:
-![[Pasted image 20240807112036.png]]
+
+![Pasted image 20240807112036](https://github.com/user-attachments/assets/2e3f75ae-6f8e-4211-8f1b-89107683ac51)
+
 
 #### Rolling Count of New Vaccinations using CTE
 ---
@@ -118,7 +127,9 @@ FROM PopvsVac
 
 
 Sample output: 
-![[Pasted image 20240807112922.png]]
+
+![Pasted image 20240807112922](https://github.com/user-attachments/assets/26a2469a-165a-4b0e-8d6f-adb5a5925b9d)
+
 
 #### Rolling Count of New Vaccinations using Temp Table
 ---
@@ -151,7 +162,9 @@ FROM #PercentPopulationVaccinated
 ```
 
 Sample Output: 
-![[Pasted image 20240807113608.png]]
+
+![Pasted image 20240807113608](https://github.com/user-attachments/assets/021af906-952e-4bea-8c10-2d6f5b122c80)
+
 
 ### Creating View for Tableau Visualization
 ---
@@ -171,7 +184,9 @@ WHERE dea.continent IS NOT NULL
 
 Sample Output:
 
-![[Pasted image 20240807120444.png]]
+![Pasted image 20240807120444](https://github.com/user-attachments/assets/592aec1d-1487-42b3-a046-9d4049d59e3b)
+
+
 # Tableau Visualizations Overview
 ---
 **[Access Tableau Dashboard Here](https://public.tableau.com/app/profile/usama.labanieh/viz/CovidProjectViz_17136144374880/Dashboard1)**
@@ -180,18 +195,22 @@ This is a simple and informative Tableau Daashboard that showcases some interest
 
 - Global Numbers Table: Total number of cases, deaths and death percentage based on numbers from the whole world
 
-![[Pasted image 20240807124913.png]]
+![Pasted image 20240807124913](https://github.com/user-attachments/assets/6cc76b85-6ce8-4014-a41b-822f23636504)
+
 
 - Bar Chart of Deaths by Continent: Total number of deaths caused by Covid-19 by continent
 
-![[Pasted image 20240807124933.png]]
+![Pasted image 20240807124933](https://github.com/user-attachments/assets/b48ce775-a744-4b52-9ba0-6310ba2199be)
+
 
 - World Map of Infected Population by Country: using a color gradient, this map shows the percent of the population that has been infected with Covid-19. The darker the color, the higher the percentage
 
-![[Pasted image 20240807124950.png]]
+![Pasted image 20240807124950](https://github.com/user-attachments/assets/8649e2af-83e0-43f6-834d-566fea234d8b)
+
 
 - Line Chart of Percent of Population Infected: using 5 sample countries: China, India, Mexico, United Kingdom and United States; we look at the progression of the percentage of people infected with Covid-19 from the total population. This chart also includes a forecast, which is a prediction of the future percentages in these countries based on the previous numbers.
 
-![[Pasted image 20240807125006.png]]
+![Pasted image 20240807125006](https://github.com/user-attachments/assets/9edb4cb8-2ec0-4597-b4d7-115443bf5e49)
+
 
 To view the full dashboard and explore it more in detail, click on this [link](https://public.tableau.com/app/profile/usama.labanieh/viz/CovidProjectViz_17136144374880/Dashboard1)
